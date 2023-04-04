@@ -3,9 +3,7 @@ from rest_framework.routers import DefaultRouter
 
 from .views import (CategoryViewSet, CommentViewSet, GenreViewSet,
                     ReviewViewSet, TitleViewSet, UserViewSet,
-                    send_confirmation_code,
-                    send_token,
-                    )
+                    send_confirmation_code, send_token)
 
 router = DefaultRouter()
 router.register(r'categories', CategoryViewSet)
